@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ประวัติส่วนตัว - Portfolio</title>
+    <!-- นำเข้าฟอนต์ภาษาไทยสวยๆ จาก Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* ตั้งค่าพื้นฐาน */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Prompt', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #333;
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        /* กล่องการ์ดหลัก */
+        .profile-card {
+            background: #ffffff;
+            max-width: 650px;
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        /* ส่วนหัว (แบนเนอร์ + รูปโปรไฟล์) */
+        .header {
+            background: linear-gradient(135deg, #2563eb, #1d4ed8);
+            color: white;
+            text-align: center;
+            padding: 40px 20px 30px;
+        }
+
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 4px solid white;
+            object-fit: cover;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            background-color: #e2e8f0;
+        }
+
+        .header h1 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .header .tagline {
+            font-size: 1rem;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+
+        /* ส่วนเนื้อหา */
+        .content {
+            padding: 30px;
+        }
+
+        .section {
+            margin-bottom: 25px;
+        }
+
+        .section:last-child {
+            margin-bottom: 0;
+        }
+
+        .section-title {
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: #1e293b;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 8px;
+            margin-bottom: 15px;
+        }
+
+        /* ป้ายทักษะ (Skills) */
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill-tag {
+            background: #eff6ff;
+            color: #2563eb;
+            padding: 6px 14px;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        /* รายการประวัติการศึกษา / ประสบการณ์ */
+        .timeline-item {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 3px solid #2563eb;
+        }
+
+        .timeline-item h3 {
+            font-size: 1rem;
+            color: #0f172a;
+        }
+
+        .timeline-item span {
+            font-size: 0.85rem;
+            color: #64748b;
+        }
+
+        /* ปุ่มช่องทางติดต่อ */
+        .contact-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .btn {
+            display: inline-block;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+
+        .btn-primary {
+            background: #2563eb;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #1d4ed8;
+            transform: translateY(-2px);
+        }
+
+        .btn-outline {
+            border: 1px solid #cbd5e1;
+            color: #334155;
+        }
+
+        .btn-outline:hover {
+            background: #f8fafc;
+            border-color: #94a3b8;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="profile-card">
+    <!-- ส่วนหัวโปรไฟล์ -->
+    <div class="header">
+        <!-- ดึงรูปจากเครื่อง (ต้องเก็บไฟล์รูปไว้ในโฟลเดอร์เดียวกับไฟล์ HTML) -->
+        <img src="https://drive.google.com/file/d/1yuKwuCEKlXGCb2_YwVx70CZY8wxT4Jwe/view?usp=sharing" alt="รูปโปรไฟล์ วีรภัทร ดิสโต" class="avatar">
+        <h1>วีรภัทร ดิสโต</h1>
+        <p class="tagline">วิทยาลัยเทคนิคสมุทรปราการ</p>
+    </div>
+
+        <!-- ส่วนเนื้อหา -->
+        <div class="content">
+            <!-- เกี่ยวกับฉัน -->
+            <div class="section">
+                <h2 class="section-title">เกี่ยวกับฉัน</h2>
+                <p>
+                   ยินดีต้อนรับสู่หน้าแนะนำตัว ฉันเป็นคนที่มีความสนใจในด้านการพัฒนาเว็บไซต์และการออกแบบ ชอบเรียนรู้เทคโนโลยีใหม่ๆ และมุ่งมั่นสร้างสรรค์ผลงานที่มีคุณภาพ
+                </p>
+            </div>
+
+            <!-- ทักษะ -->
+            <div class="section">
+                <h2 class="section-title">ทักษะความสามารถ</h2>
+                <div class="skills">
+                    <span class="skill-tag">HTML5</span>
+                    <span class="skill-tag">CSS3</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">UI/UX Design</span>
+                    <span class="skill-tag">กีฬา</span>
+                </div>
+            </div>
+
+            <!-- การศึกษา / ประสบการณ์ -->
+            <div class="section">
+                <h2 class="section-title">การศึกษา / ประสบการณ์</h2>
+                <div class="timeline-item">
+                    <h3>ตำแหน่งนักศึกษา</h3>
+                    <span>วิทยาลัยเทคนิคสมุทรปราการ | พ.ศ. 2569 - ปัจจุบัน</span>
+                    <p>สาขาวิชาเทคโนโลยีสารสนเทศ</p>
+                </div>
+            </div>
+
+            <!-- ช่องทางติดต่อ -->
+            <div class="section">
+                <h2 class="section-title">ช่องทางติดต่อ</h2>
+                <div class="contact-links">
+                    <a href="mailto:youremail@example.com" class="btn btn-primary">ส่งอีเมล</a>
+                    <a href="#" target="_blank" class="btn btn-outline">GitHub</a>
+                    <a href="#" target="_blank" class="btn btn-outline">LinkedIn</a>
+                    <a href="#" target="_blank" class="btn btn-outline">Facebook</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
