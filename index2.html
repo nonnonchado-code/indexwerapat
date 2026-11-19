@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ประวัติส่วนตัว - Portfolio</title>
+    <title>ประวัติส่วนตัว - วีรภัทร ดิสโต</title>
     <!-- นำเข้าฟอนต์ภาษาไทยสวยๆ จาก Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
-        /* ตั้งค่าพื้นฐาน */
+        /* ตั้งค่าพื้นฐาน (แก้ไขจาก - เป็น *) */
         * {
             box-sizing: border-box;
             margin: 0;
@@ -50,6 +50,7 @@
             border-radius: 50%;
             border: 4px solid white;
             object-fit: cover;
+            object-position: center top; /* จัดตำแหน่งให้เห็นใบหน้าชัดเจน */
             margin-bottom: 15px;
             box-shadow: 0 4px 10px rgba(0,0,0,0.2);
             background-color: #e2e8f0;
@@ -163,13 +164,13 @@
 <body>
 
     <div class="profile-card">
-    <!-- ส่วนหัวโปรไฟล์ -->
-    <div class="header">
-        <!-- ดึงรูปจากเครื่อง (ต้องเก็บไฟล์รูปไว้ในโฟลเดอร์เดียวกับไฟล์ HTML) -->
-        <img src="https://drive.google.com/file/d/1yuKwuCEKlXGCb2_YwVx70CZY8wxT4Jwe/view?usp=sharing" alt="รูปโปรไฟล์ วีรภัทร ดิสโต" class="avatar">
-        <h1>วีรภัทร ดิสโต</h1>
-        <p class="tagline">วิทยาลัยเทคนิคสมุทรปราการ</p>
-    </div>
+        <!-- ส่วนหัวโปรไฟล์ -->
+        <div class="header">
+            <!-- แปลงลิงก์ Google Drive เป็นลิงก์ตรงสำหรับแสดงรูปภาพ -->
+            <img src="https://drive.google.com/thumbnail?id=1yuKwuCEKlXGCb2_YwVx70CZY8wxT4Jwe&sz=w1000" alt="รูปโปรไฟล์ วีรภัทร ดิสโต" class="avatar">
+            <h1>วีรภัทร ดิสโต</h1>
+            <p class="tagline">วิทยาลัยเทคนิคสมุทรปราการ</p>
+        </div>
 
         <!-- ส่วนเนื้อหา -->
         <div class="content">
